@@ -1,0 +1,30 @@
+{
+  "site_name": "ディープラーニング用語ドリル",
+  "tagline": "G検定の用語を無料で覚える単語帳（シラバス 2024 対応）",
+  "description": "G検定（ジェネラリスト検定）の用語（人工知能の動向・機械学習・ディープラーニングの技術と応用・数理と統計・法律と倫理）を、カード・4択クイズ・書いて答える問題・分野別ミニテスト・略語クイズで覚えられる無料の単語帳サイトです。",
+  "base_url": "https://dl.yogo-drill.com",
+  "sisters": [
+    {
+      "name": "生成AI用語ドリル",
+      "url": "https://genai.yogo-drill.com",
+      "desc": "生成AIの用語"
+    },
+    {
+      "name": "ITパスポート用語ドリル",
+      "url": "https://ip.yogo-drill.com",
+      "desc": "ITパスポート試験の用語"
+    },
+    {
+      "name": "FE用語ドリル",
+      "url": "https://fe.yogo-drill.com",
+      "desc": "基本情報技術者試験の用語とプログラムの問題"
+    }
+  ],
+  "operator": "Yuki-fe",
+  "contact": "https://forms.gle/s4yB1xMbcoRqZps2A",
+  "established": "2026-10-15",
+  "google_analytics_id": "",
+  "adsense_client": "",
+  "amazon_associate": false,
+  "affiliate_html": ""
+}
