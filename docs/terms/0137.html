@@ -14,8 +14,9 @@
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/layout.css">
 <link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -24,32 +25,30 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Mixup", "description": "2枚の画像とそのラベルを、決めた割合で混ぜ合わせるデータ拡張。", "url": "https://dl.yogo-drill.com/terms/0137.html", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "ディープラーニング用語ドリル G検定 用語集", "url": "https://dl.yogo-drill.com/terms/index.html"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dl.yogo-drill.com/"}, {"@type": "ListItem", "position": 2, "name": "ディープラーニングの技術", "item": "https://dl.yogo-drill.com/terms/index.html#D"}, {"@type": "ListItem", "position": 3, "name": "Mixup", "item": "https://dl.yogo-drill.com/terms/0137.html"}]}</script>
 </head>
 <body class="" data-root="../">
+<a class="skip" href="#content">本文へ移動</a>
 <header class="site-head">
-  <a class="brand" href="../index.html">ディープラーニング用語ドリル</a>
-  <nav class="site-nav" aria-label="サイト内">
-    <a href="../index.html">用語ドリル</a>
-    <a href="../test.html">ミニテスト</a>
-    <a href="../abbr.html">略語</a>
-    <a href="../terms/index.html">用語一覧</a>
-    <a href="../about.html">このサイトについて</a>
-  </nav>
-</header>
-
-<main class="prose term-page">
-  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><a href="index.html#D">ディープラーニングの技術</a><span>›</span><a href="index.html#sub-D-データ拡張">データ拡張</a></nav>
-  <p class="eyebrow">ディープラーニングの技術・データ拡張</p>
-  <h1>Mixup</h1>
-  
-  <p class="lead">2枚の画像とそのラベルを、決めた割合で混ぜ合わせるデータ拡張。</p>
-  <div class="cta-row">
-    <a class="btn primary" href="../index.html#card">カードで練習する</a>
-    <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
+  <div class="site-head-in">
+    <a class="brand" href="../index.html"><img src="../favicon.svg" alt="" width="28" height="28">ディープラーニング用語ドリル</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html">用語ドリル</a><a href="../test.html">ミニテスト</a><a href="../abbr.html">略語</a><a href="../terms/index.html" aria-current="page">用語一覧</a><a href="../about.html">このサイトについて</a>
+    </nav>
   </div>
-  <section>
-    <h2>同じ分野の用語</h2>
-    <ul class="related"><li><a href="0136.html">Cutout と Random Erasing</a><p>画像の一部を四角く隠して（消して）学習させるデータ拡張。一部が見えなくても認識できるようになる。</p></li><li><a href="0138.html">CutMix</a><p>画像の一部を別の画像で置き換え、ラベルも面積の割合で混ぜるデータ拡張。</p></li><li><a href="0135.html">データ拡張</a><p>学習データに、反転・回転・切り抜きなどの変形を加えて、データの量と多様さを増やす方法。過学習を防ぐ。</p></li><li><a href="0139.html">RandAugment</a><p>たくさんの変形の中からランダムに選んで加えるデータ拡張。調整する値が少なくて済む。</p></li><li><a href="0140.html">noisingとparaphrasing</a><p>文章のデータ拡張。noising は単語を消す・入れ替えるなどのノイズを加える。paraphrasing は意味を変えずに言い換える。</p></li></ul>
-  </section>
-  
+</header>
+<div id="content"></div>
+
+<div class="term-wrap">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><a href="index.html#D">ディープラーニングの技術</a><span>›</span><a href="index.html#sub-D-データ拡張">データ拡張</a></nav>
+  <div class="term-grid">
+    <main class="prose term-page term-main">
+      <p class="eyebrow">ディープラーニングの技術・データ拡張<span class="term-no mono">No.137 / 293</span></p>
+      <h1>Mixup</h1>
+      
+      <p class="lead">2枚の画像とそのラベルを、決めた割合で混ぜ合わせるデータ拡張。</p>
+      <div class="cta-row cta-mobile">
+        <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
+        <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
+      </div>
+      
   <section class="mini-quiz" data-answer="0" data-term="noisingとparaphrasing" data-href="0140.html">
     <h2>確認問題</h2>
     <p>次の説明に当てはまる用語はどれか。</p>
@@ -57,9 +56,23 @@
     <div class="choices"><button class="choice" type="button" data-k="0"><span class="oval">ア</span><span>noisingとparaphrasing</span></button><button class="choice" type="button" data-k="1"><span class="oval">イ</span><span>データ拡張</span></button><button class="choice" type="button" data-k="2"><span class="oval">ウ</span><span>RandAugment</span></button><button class="choice" type="button" data-k="3"><span class="oval">エ</span><span>Mixup</span></button></div>
     <p class="quiz-result" hidden></p>
   </section>
-  
-  <nav class="pager" aria-label="前後の用語"><a href="0136.html" rel="prev"><small>前の用語</small>Cutout と Random Erasing</a><a href="0138.html" rel="next" class="next"><small>次の用語</small>CutMix</a></nav>
-</main>
+      
+      <nav class="pager" aria-label="前後の用語"><a href="0136.html" rel="prev"><small>前の用語</small>Cutout と Random Erasing</a><a href="0138.html" rel="next" class="next"><small>次の用語</small>CutMix</a></nav>
+    </main>
+    <aside class="term-side" aria-label="練習と関連する用語">
+      <section class="side-card">
+        <h2>この用語を練習する</h2>
+        <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
+        <a class="btn" href="../index.html#type"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>書いて答える</a>
+        <a class="btn" href="../test.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>ミニテストに挑戦</a>
+      </section>
+      <section class="side-card">
+        <h2>同じ分野の用語</h2>
+        <ul class="related"><li><a href="0136.html">Cutout と Random Erasing</a><p>画像の一部を四角く隠して（消して）学習させるデータ拡張。一部が見えなくても認識できるようになる。</p></li><li><a href="0138.html">CutMix</a><p>画像の一部を別の画像で置き換え、ラベルも面積の割合で混ぜるデータ拡張。</p></li><li><a href="0135.html">データ拡張</a><p>学習データに、反転・回転・切り抜きなどの変形を加えて、データの量と多様さを増やす方法。過学習を防ぐ。</p></li><li><a href="0139.html">RandAugment</a><p>たくさんの変形の中からランダムに選んで加えるデータ拡張。調整する値が少なくて済む。</p></li><li><a href="0140.html">noisingとparaphrasing</a><p>文章のデータ拡張。noising は単語を消す・入れ替えるなどのノイズを加える。paraphrasing は意味を変えずに言い換える。</p></li></ul>
+      </section>
+    </aside>
+  </div>
+</div>
 
 <footer class="site-foot">
   <nav aria-label="フッター">
