@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leaky ReLU関数とは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="Leaky ReLU関数（ディープラーニングの技術・活性化関数）: ReLU関数の、入力が 0 以下のときにも少しだけ傾きを持たせたもの。">
+<title>Leaky ReLU関数とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
+<meta name="description" content="Leaky ReLU関数（ディープラーニングの技術・活性化関数）: ReLU関数の、入力が 0 以下のときにも少しだけ傾きを持たせたもの。【覚え方】leaky は「もれる」という意味です。ReLU 関数は 0 以下を完全にせき止めますが、…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0087.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leaky ReLU関数とは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="Leaky ReLU関数（ディープラーニングの技術・活性化関数）: ReLU関数の、入力が 0 以下のときにも少しだけ傾きを持たせたもの。">
+<meta property="og:title" content="Leaky ReLU関数とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
+<meta property="og:description" content="Leaky ReLU関数（ディープラーニングの技術・活性化関数）: ReLU関数の、入力が 0 以下のときにも少しだけ傾きを持たせたもの。【覚え方】leaky は「もれる」という意味です。ReLU 関数は 0 以下を完全にせき止めますが、…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0087.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>leaky は「もれる」という意味です。ReLU 関数は 0 以下を完全にせき止めますが、Leaky ReLU 関数は少しだけもらす、と考えます。こうすると、入力が負のときにも勾配が 0 にならず、学習が止まりにくくなります。</p></section><section class="detail"><h2>試験での出され方</h2><p>ReLU 関数との違い（入力が 0 以下のときの傾き）が問われます。傾きそのものも学習で決める Parametric ReLU などの仲間と並べて出ることもあります。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0086.html">ReLU関数</a>との違い</dt><dd>ReLU 関数は、入力が 0 以下なら出力も勾配も 0。Leaky ReLU 関数は、0 以下でも小さな傾きを持つ。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="tanh関数" data-href="0085.html">
     <h2>確認問題</h2>

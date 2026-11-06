@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>プーリング層とは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="プーリング層（ディープラーニングの技術・層と構造）: 決まった範囲の最大値（最大値プーリング）や平均（平均値プーリング）をとって、特徴マップを小さくする層。位置の少しのずれに強くなる（不変性の獲得）。">
+<title>プーリング層とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
+<meta name="description" content="プーリング層（ディープラーニングの技術・層と構造）: 決まった範囲の最大値（最大値プーリング）や平均（平均値プーリング）をとって、特徴マップを小さくする層。位置の少しのずれに強くなる（不変性の獲得）。【覚え方】写真を区画に分けて、各区画の…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0114.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="プーリング層とは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="プーリング層（ディープラーニングの技術・層と構造）: 決まった範囲の最大値（最大値プーリング）や平均（平均値プーリング）をとって、特徴マップを小さくする層。位置の少しのずれに強くなる（不変性の獲得）。">
+<meta property="og:title" content="プーリング層とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
+<meta property="og:description" content="プーリング層（ディープラーニングの技術・層と構造）: 決まった範囲の最大値（最大値プーリング）や平均（平均値プーリング）をとって、特徴マップを小さくする層。位置の少しのずれに強くなる（不変性の獲得）。【覚え方】写真を区画に分けて、各区画の…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0114.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>写真を区画に分けて、各区画の代表を1つだけ残して縮小する、と考えます。代表の選び方が、いちばん大きい値（最大値プーリング）か、平均（平均値プーリング）かの違いです。</p></section><section class="detail"><h2>試験での出され方</h2><p>学習するパラメータがないことと、位置の少しのずれに強くなること（不変性）がよく問われます。畳み込み層との役割の違いも出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0110.html">畳み込み層</a>との違い</dt><dd>畳み込み層は、学習するフィルタで特徴を取り出す層。プーリング層は、学習するパラメータを持たず、特徴マップを小さくする層。</dd><dt><a href="0115.html">グローバルアベレージプーリング（GAP）</a>との違い</dt><dd>グローバルアベレージプーリングは、決まった範囲ではなく、特徴マップ全体の平均を1つの値にする。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="レイヤー正規化" data-href="0117.html">
     <h2>確認問題</h2>

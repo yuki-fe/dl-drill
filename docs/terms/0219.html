@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Permutation Importanceとは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="Permutation Importance（ディープラーニングの応用・解釈性と軽量化）: ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。">
+<title>Permutation Importanceとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
+<meta name="description" content="Permutation Importance（ディープラーニングの応用・解釈性と軽量化）: ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。【覚え方】ある特徴の列だけをシャッフルして、でたら…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0219.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Permutation Importanceとは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="Permutation Importance（ディープラーニングの応用・解釈性と軽量化）: ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。">
+<meta property="og:title" content="Permutation Importanceとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
+<meta property="og:description" content="Permutation Importance（ディープラーニングの応用・解釈性と軽量化）: ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。【覚え方】ある特徴の列だけをシャッフルして、でたら…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0219.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>ある特徴の列だけをシャッフルして、でたらめにしてみます。それで予測の性能が大きく下がれば、その特徴は大事だった、ほとんど下がらなければ大事ではなかった、とわかります。Permutation は「並べ替え」という意味です。</p></section><section class="detail"><h2>試験での出され方</h2><p>特徴の値を並べ替えたときの性能の下がり方で重要度を測る方法として、説明文から選ばせる問題が出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0218.html">SHAP</a>との違い</dt><dd>SHAP は、ゲーム理論のシャープレイ値を使って、1件ごとの予測に対する特徴の貢献度も示せる。</dd><dt><a href="0048.html">ランダムフォレスト</a>との違い</dt><dd>ランダムフォレストは、モデルの中の決定木の分け方から特徴の重要度を求められる。Permutation Importance は、モデルの種類によらずに使える。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="プルーニング" data-href="0221.html">
     <h2>確認問題</h2>

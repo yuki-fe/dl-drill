@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Depthwise Separable Convolutionとは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="Depthwise Separable Convolution（ディープラーニングの技術・層と構造）: 畳み込みを、チャネルごとの畳み込みと、1×1 の畳み込みに分けて、計算を大きく減らす方法。">
+<title>Depthwise Separable Convolutionとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
+<meta name="description" content="Depthwise Separable Convolution（ディープラーニングの技術・層と構造）: 畳み込みを、チャネルごとの畳み込みと、1×1 の畳み込みに分けて、計算を大きく減らす方法。【覚え方】仕事を2つに分業する、と考えます。…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0113.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Depthwise Separable Convolutionとは？意味をわかりやすく｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="Depthwise Separable Convolution（ディープラーニングの技術・層と構造）: 畳み込みを、チャネルごとの畳み込みと、1×1 の畳み込みに分けて、計算を大きく減らす方法。">
+<meta property="og:title" content="Depthwise Separable Convolutionとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
+<meta property="og:description" content="Depthwise Separable Convolution（ディープラーニングの技術・層と構造）: 畳み込みを、チャネルごとの畳み込みと、1×1 の畳み込みに分けて、計算を大きく減らす方法。【覚え方】仕事を2つに分業する、と考えます。…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0113.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>仕事を2つに分業する、と考えます。まずチャネルごとに別々に空間の畳み込みをし（Depthwise）、次に 1×1 の畳み込みでチャネルどうしを混ぜます（Pointwise）。分けることで、計算の量が大きく減ります。</p></section><section class="detail"><h2>試験での出され方</h2><p>ふつうの畳み込みとの計算の量の違いと、MobileNet で使われていることがよく問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0110.html">畳み込み層</a>との違い</dt><dd>ふつうの畳み込み層は、空間の方向とチャネルの方向を一度にまとめて計算する。</dd><dt><a href="0148.html">MobileNet</a>との違い</dt><dd>MobileNet は、Depthwise Separable Convolution を使って軽くしたモデルの名前。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="畳み込み層" data-href="0110.html">
     <h2>確認問題</h2>
