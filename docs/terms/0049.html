@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ブースティングとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="ブースティング（機械学習・教師あり学習）: 前のモデルが間違えたデータを重く見ながら、モデルを順番に作って組み合わせる方法。勾配ブースティングなど。">
+<meta name="description" content="ブースティング（機械学習・教師あり学習）: 前のモデルが間違えたデータを重く見ながら、モデルを順番に作って組み合わせる方法。勾配ブースティングなど。【覚え方】「boost（押し上げる）」の名前のとおり、弱いモデルを順番に重ねて強くしていき…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0049.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ブースティングとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="ブースティング（機械学習・教師あり学習）: 前のモデルが間違えたデータを重く見ながら、モデルを順番に作って組み合わせる方法。勾配ブースティングなど。">
+<meta property="og:description" content="ブースティング（機械学習・教師あり学習）: 前のモデルが間違えたデータを重く見ながら、モデルを順番に作って組み合わせる方法。勾配ブースティングなど。【覚え方】「boost（押し上げる）」の名前のとおり、弱いモデルを順番に重ねて強くしていき…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0049.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「boost（押し上げる）」の名前のとおり、弱いモデルを順番に重ねて強くしていきます。前のモデルが間違えたデータを重く見て次のモデルを作るので、前の弱点を後ろのモデルが補います。</p></section><section class="detail"><h2>試験での出され方</h2><p>「逐次的に学習する」「誤分類したデータの重みを大きくする」という説明から選ばせる問題が出ます。勾配ブースティングは、その代表的な方法です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0047.html">バギング</a>との違い</dt><dd>バギングは、モデルを並列に別々に作って、多数決や平均でまとめる。ブースティングは、順番に作る。</dd><dt><a href="0048.html">ランダムフォレスト</a>との違い</dt><dd>ランダムフォレストは、バギングで決定木を並列に作る。ブースティングは、モデルを順番に作る。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="アンサンブル学習" data-href="0046.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0048.html">ランダムフォレスト</a><p>バギングで作った多数の決定木に、使う特徴もランダムに選ばせて、多数決などで結果を出す方法。</p></li><li><a href="0050.html">自己回帰モデル（ARモデル）</a><p>過去の自分の値から、次の値を予測する時系列のモデル。複数の時系列を同時に扱うものはベクトル自己回帰モデル（VARモデル）。</p></li><li><a href="0047.html">バギング</a><p>データから重複を許して取り出した複数のデータ（ブートストラップサンプリング）で、別々にモデルを作り、結果をまとめる方法。</p></li><li><a href="0046.html">アンサンブル学習</a><p>複数のモデルを組み合わせて、1つのモデルより良い予測をする方法。バギングやブースティングがある。</p></li><li><a href="0045.html">決定木</a><p>「はい・いいえ」の質問を木の形につなげて、分類や予測をする方法。判断の理由がわかりやすい。</p></li><li><a href="0044.html">カーネルトリック</a><p>データを高い次元に移したときの計算を、実際に移さずに効率よく行う工夫。SVM で、まっすぐな線で分けられないデータを分けるのに使う。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/bagging-boosting.html">バギングとブースティングとランダムフォレストの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

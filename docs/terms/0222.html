@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>量子化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="量子化（ディープラーニングの応用・解釈性と軽量化）: 重みなどの数を、少ないビット数で表して、モデルを軽く・速くする方法。">
+<meta name="description" content="量子化（ディープラーニングの応用・解釈性と軽量化）: 重みなどの数を、少ないビット数で表して、モデルを軽く・速くする方法。【覚え方】細かい目盛りのものさしを、粗い目盛りのものさしに取りかえるイメージです。重みを、たとえば 32ビットの小数…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0222.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="量子化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="量子化（ディープラーニングの応用・解釈性と軽量化）: 重みなどの数を、少ないビット数で表して、モデルを軽く・速くする方法。">
+<meta property="og:description" content="量子化（ディープラーニングの応用・解釈性と軽量化）: 重みなどの数を、少ないビット数で表して、モデルを軽く・速くする方法。【覚え方】細かい目盛りのものさしを、粗い目盛りのものさしに取りかえるイメージです。重みを、たとえば 32ビットの小数…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0222.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>細かい目盛りのものさしを、粗い目盛りのものさしに取りかえるイメージです。重みを、たとえば 32ビットの小数から 8ビットの整数のように少ないビットで表すと、メモリが減り、計算も速くなります。</p></section><section class="detail"><h2>試験での出され方</h2><p>モデルを軽くする方法として、蒸留・プルーニングと並べて問われます。スマホなどで AI を動かすエッジAI でよく使われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0221.html">プルーニング</a>との違い</dt><dd>プルーニングは、重みやニューロンそのものを取り除く。量子化は、取り除かずに、数の表し方を粗くする。</dd><dt><a href="0220.html">蒸留</a>との違い</dt><dd>蒸留は、小さなモデルに大きなモデルをまねさせる。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="プルーニング" data-href="0221.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0221.html">プルーニング</a><p>重要度の低い重みやニューロンを取り除いて、モデルを軽くする方法（枝刈り）。</p></li><li><a href="0223.html">宝くじ仮説</a><p>大きなネットワークの中には、単独で学習しても同じくらいの性能が出る、小さなネットワーク（当たりくじ）がふくまれているという仮説。</p></li><li><a href="0220.html">蒸留</a><p>大きなモデル（教師）の出力をまねるように、小さなモデル（生徒）を学習させて、モデルを軽くする方法。</p></li><li><a href="0224.html">エッジAI</a><p>クラウドではなく、スマホやカメラなどの機器（エッジ）の上で AI を動かすこと。速く応え、データを外に出さずに済む。</p></li><li><a href="0219.html">Permutation Importance</a><p>ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。</p></li><li><a href="0218.html">SHAP</a><p>ゲーム理論のシャープレイ値を使って、それぞれの特徴が予測にどれだけ貢献したかを示す方法。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/distillation-pruning-quantization.html">蒸留とプルーニングと量子化の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

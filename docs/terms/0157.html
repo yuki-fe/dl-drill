@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>インスタンスセグメンテーションとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="インスタンスセグメンテーション（ディープラーニングの応用・画像認識）: 物体ごとに画素の範囲を分けるタスク。同じ種類でも1つずつ区別する。両方を合わせたものがパノプティックセグメンテーション。">
+<meta name="description" content="インスタンスセグメンテーション（ディープラーニングの応用・画像認識）: 物体ごとに画素の範囲を分けるタスク。同じ種類でも1つずつ区別する。両方を合わせたものがパノプティックセグメンテーション。【覚え方】インスタンスは「1つ1つの実物」とい…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0157.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="インスタンスセグメンテーションとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="インスタンスセグメンテーション（ディープラーニングの応用・画像認識）: 物体ごとに画素の範囲を分けるタスク。同じ種類でも1つずつ区別する。両方を合わせたものがパノプティックセグメンテーション。">
+<meta property="og:description" content="インスタンスセグメンテーション（ディープラーニングの応用・画像認識）: 物体ごとに画素の範囲を分けるタスク。同じ種類でも1つずつ区別する。両方を合わせたものがパノプティックセグメンテーション。【覚え方】インスタンスは「1つ1つの実物」とい…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0157.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>インスタンスは「1つ1つの実物」という意味です。人が3人写っていれば「人1」「人2」「人3」と別々に塗り分けます。物体検出の四角い枠の代わりに、物の形どおりの範囲を出すイメージです。</p></section><section class="detail"><h2>試験での出され方</h2><p>代表的なモデル Mask R-CNN と結びつけて問われます。セマンティックとの違いは「同じ種類の物を区別するかどうか」です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0156.html">セマンティックセグメンテーション</a>との違い</dt><dd>セマンティックセグメンテーションは、種類ごとに塗り分けるだけで、同じ種類の物は区別しない。</dd><dt><a href="0161.html">Mask R-CNN</a>との違い</dt><dd>Mask R-CNN は、インスタンスセグメンテーションを行う代表的なモデル。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="FCN" data-href="0158.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0156.html">セマンティックセグメンテーション</a><p>画像の1つ1つの画素が、どの種類の物かを分けるタスク。同じ種類の物は区別しない。</p></li><li><a href="0158.html">FCN</a><p>全結合層を使わず、すべて畳み込み層で作った、画素ごとに分類するセグメンテーションのモデル。</p></li><li><a href="0155.html">FPN</a><p>大きさの違う特徴マップを組み合わせて、大小さまざまな物を検出しやすくする仕組み。</p></li><li><a href="0159.html">U-Net</a><p>縮める側の特徴を、広げる側にスキップ結合でつなぐ U 字の形のセグメンテーションのモデル。医療画像でよく使われる。</p></li><li><a href="0154.html">SSD</a><p>大きさの違う複数の特徴マップを使って、1回の処理で物体を検出するモデル。</p></li><li><a href="0160.html">SegNet と PSPNet と DeepLab</a><p>セグメンテーションのモデル。SegNet はエンコーダ・デコーダ型、PSPNet はピラミッドプーリングで大きな文脈をとらえ、DeepLab は Atrous Convolution を使う。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/semantic-instance-segmentation.html">セマンティックセグメンテーションとインスタンスセグメンテーションの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

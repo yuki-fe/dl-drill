@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LSTMとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="LSTM（ディープラーニングの技術・層と構造）: ゲート機構と記憶セル（CEC）で、長い時系列でも大事な情報を覚えておけるようにした RNN。">
+<meta name="description" content="LSTM（ディープラーニングの技術・層と構造）: ゲート機構と記憶セル（CEC）で、長い時系列でも大事な情報を覚えておけるようにした RNN。【覚え方】Long Short-Term Memory の略です。記憶セルという「メモ帳」と、3…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0122.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LSTMとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="LSTM（ディープラーニングの技術・層と構造）: ゲート機構と記憶セル（CEC）で、長い時系列でも大事な情報を覚えておけるようにした RNN。">
+<meta property="og:description" content="LSTM（ディープラーニングの技術・層と構造）: ゲート機構と記憶セル（CEC）で、長い時系列でも大事な情報を覚えておけるようにした RNN。【覚え方】Long Short-Term Memory の略です。記憶セルという「メモ帳」と、3…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0122.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>Long Short-Term Memory の略です。記憶セルという「メモ帳」と、3つのゲート（入力ゲート・忘却ゲート・出力ゲート）という「扉」を持ち、何を書き込み、何を忘れ、何を出すかを調整します。これで、ふつうの RNN が苦手な長い系列を覚えられます。</p></section><section class="detail"><h2>試験での出され方</h2><p>ゲートの種類と役割（特に、情報を捨てる忘却ゲート）や、記憶セル（CEC）の名前が問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0123.html">GRU</a>との違い</dt><dd>GRU は、LSTM を簡単にしたもの。ゲートはリセットゲートと更新ゲートの2つで、記憶セルを持たない。</dd><dt><a href="0119.html">リカレントニューラルネットワーク（RNN）</a>との違い</dt><dd>ふつうの RNN は、ゲートを持たないので、長い系列の情報を覚えるのが苦手。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="教師強制" data-href="0125.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0121.html">エルマンネットワークとジョルダンネットワーク</a><p>初期の RNN。エルマンネットワークは隠れ層の出力を、ジョルダンネットワークは出力層の出力を、次の時点の入力に戻す。</p></li><li><a href="0123.html">GRU</a><p>LSTM を簡単にした RNN。リセットゲートと更新ゲートの2つで情報を調整する。</p></li><li><a href="0120.html">BPTT</a><p>RNN を時間の方向に展開して、誤差逆伝播法で学習する方法。</p></li><li><a href="0124.html">双方向RNN</a><p>過去から未来と、未来から過去の両方向に情報を流す RNN。文の前後の両方を使える。</p></li><li><a href="0119.html">リカレントニューラルネットワーク（RNN）</a><p>前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。</p></li><li><a href="0125.html">教師強制</a><p>RNN の学習で、前の時点の予測ではなく、正解を次の入力に使う方法。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/rnn-lstm-gru.html">RNNとLSTMとGRUの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

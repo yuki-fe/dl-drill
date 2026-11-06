@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>分散表現（単語埋め込み）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="分散表現（単語埋め込み）（ディープラーニングの応用・自然言語処理）: 単語を、意味の近いものほど近くなる、少ない次元のベクトルで表す方法。">
+<meta name="description" content="分散表現（単語埋め込み）（ディープラーニングの応用・自然言語処理）: 単語を、意味の近いものほど近くなる、少ない次元のベクトルで表す方法。【覚え方】単語の意味を、いくつもの数に「分散」させて表します。似た文脈で使われる単語は似たベクトルに…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0169.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分散表現（単語埋め込み）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="分散表現（単語埋め込み）（ディープラーニングの応用・自然言語処理）: 単語を、意味の近いものほど近くなる、少ない次元のベクトルで表す方法。">
+<meta property="og:description" content="分散表現（単語埋め込み）（ディープラーニングの応用・自然言語処理）: 単語を、意味の近いものほど近くなる、少ない次元のベクトルで表す方法。【覚え方】単語の意味を、いくつもの数に「分散」させて表します。似た文脈で使われる単語は似たベクトルに…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0169.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>単語の意味を、いくつもの数に「分散」させて表します。似た文脈で使われる単語は似たベクトルになるので、「犬」と「猫」は近く、「犬」と「机」は遠くなります。</p></section><section class="detail"><h2>試験での出され方</h2><p>ワンホットベクトルとの違いや、分散表現を学ぶ方法（word2vec・fastText・ELMo など）が問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0168.html">ワンホットベクトル</a>との違い</dt><dd>ワンホットベクトルは、単語の位置だけを 1 にしたベクトル。次元が多く、意味の近さを表せない。</dd><dt><a href="0170.html">word2vec</a>との違い</dt><dd>word2vec は、分散表現を学ぶための方法の1つ。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="ELMo" data-href="0172.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0168.html">ワンホットベクトル</a><p>単語を、その単語の位置だけが 1、ほかが 0 のベクトルで表す方法。単語どうしの意味の近さは表せない。</p></li><li><a href="0170.html">word2vec</a><p>単語の分散表現を学ぶ方法。周りの単語から中心の単語を当てる CBOW と、中心の単語から周りを当てるスキップグラムがある。</p></li><li><a href="0167.html">n-gram</a><p>文章を、となり合う n 個の単語（または文字）の組で区切ったもの。</p></li><li><a href="0171.html">fastText</a><p>単語をさらに細かい文字の組に分けて学ぶ、word2vec を発展させた方法。知らない単語にも対応しやすい。</p></li><li><a href="0166.html">TF-IDF</a><p>単語の出てくる回数（TF）と、ほかの文書にどれだけ出ないか（IDF）を掛けて、その文書での単語の重要度を表す方法。</p></li><li><a href="0172.html">ELMo</a><p>双方向の LSTM で、文脈によって変わる単語の表現を学ぶモデル。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/onehot-embedding.html">ワンホットベクトルと分散表現の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

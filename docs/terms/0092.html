@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>L1正則化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="L1正則化（ディープラーニングの技術・誤差関数と正則化）: 重みの絶対値の合計を罰として加える正則化。不要な重みが 0 になりやすい。線形回帰に使うとラッソ回帰。">
+<meta name="description" content="L1正則化（ディープラーニングの技術・誤差関数と正則化）: 重みの絶対値の合計を罰として加える正則化。不要な重みが 0 になりやすい。線形回帰に使うとラッソ回帰。【覚え方】「L1 は 1乗（絶対値）、L2 は 2乗」と数字で覚えます。L1…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0092.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="L1正則化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="L1正則化（ディープラーニングの技術・誤差関数と正則化）: 重みの絶対値の合計を罰として加える正則化。不要な重みが 0 になりやすい。線形回帰に使うとラッソ回帰。">
+<meta property="og:description" content="L1正則化（ディープラーニングの技術・誤差関数と正則化）: 重みの絶対値の合計を罰として加える正則化。不要な重みが 0 になりやすい。線形回帰に使うとラッソ回帰。【覚え方】「L1 は 1乗（絶対値）、L2 は 2乗」と数字で覚えます。L1…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0092.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「L1 は 1乗（絶対値）、L2 は 2乗」と数字で覚えます。L1正則化は、重みの絶対値の合計を罰にするので、効いていない重みがちょうど 0 になりやすく、使う特徴を絞り込めます（スパースになる）。</p></section><section class="detail"><h2>試験での出され方</h2><p>「不要な特徴の重みを 0 にする」「特徴選択」の説明から選ばせる問題や、線形回帰に使うとラッソ回帰になる、という組み合わせが問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0093.html">L2正則化</a>との違い</dt><dd>L2正則化は、重みの2乗の合計を罰にする。重みは全体に小さくなるが、0 にはなりにくい。線形回帰に使うとリッジ回帰。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="Contrastive LossとTriplet Loss" data-href="0091.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0091.html">Contrastive LossとTriplet Loss</a><p>データどうしの距離を学ぶための誤差関数。似たものは近く、違うものは遠くなるように学習する。</p></li><li><a href="0093.html">L2正則化</a><p>重みの2乗の合計を罰として加える正則化。重みが全体に小さくなる。線形回帰に使うとリッジ回帰。</p></li><li><a href="0090.html">KLダイバージェンス</a><p>カルバック・ライブラー情報量。2つの確率分布がどれだけ違うかを表す量。</p></li><li><a href="0094.html">連鎖律</a><p>合成関数の微分は、それぞれの微分の掛け算で求められるという法則。誤差逆伝播法の土台。</p></li><li><a href="0089.html">交差エントロピー</a><p>予測の確率分布と正解の分布のずれを表す誤差関数。分類でよく使う。</p></li><li><a href="0095.html">信用割当問題</a><p>結果に対して、どの重みがどれだけ責任があるかを決める問題。誤差逆伝播法で解決した。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/l1-l2-regularization.html">L1正則化とL2正則化の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

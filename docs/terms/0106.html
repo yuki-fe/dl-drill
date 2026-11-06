@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>早期終了とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="早期終了（ディープラーニングの技術・最適化）: 検証用のデータでの誤差が増え始めたら学習を止めて、過学習を防ぐ方法（アーリーストッピング）。">
+<meta name="description" content="早期終了（ディープラーニングの技術・最適化）: 検証用のデータでの誤差が増え始めたら学習を止めて、過学習を防ぐ方法（アーリーストッピング）。【覚え方】学習を続けると、学習用データの誤差は下がり続けますが、検証用データの誤差はある所から上が…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0106.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="早期終了とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="早期終了（ディープラーニングの技術・最適化）: 検証用のデータでの誤差が増え始めたら学習を止めて、過学習を防ぐ方法（アーリーストッピング）。">
+<meta property="og:description" content="早期終了（ディープラーニングの技術・最適化）: 検証用のデータでの誤差が増え始めたら学習を止めて、過学習を防ぐ方法（アーリーストッピング）。【覚え方】学習を続けると、学習用データの誤差は下がり続けますが、検証用データの誤差はある所から上が…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0106.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>学習を続けると、学習用データの誤差は下がり続けますが、検証用データの誤差はある所から上がり始めます。上がり始めたら過学習のサインなので、そこで止める、という単純な方法です。</p></section><section class="detail"><h2>試験での出され方</h2><p>過学習を防ぐ方法として、正則化やドロップアウトと並べて問われます。グラフで、どこで学習を止めればよいかを選ばせる問題も出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0107.html">二重降下現象</a>との違い</dt><dd>二重降下現象は、モデルを大きくするとテストの誤差が一度上がったあと、また下がる現象。誤差が上がり始めても、その先でまた下がることがある、という話。</dd><dt><a href="0093.html">L2正則化</a>との違い</dt><dd>L2正則化は、重みに罰を加えて過学習を防ぐ。早期終了は、学習を止めるタイミングで過学習を防ぐ。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="RMSprop" data-href="0104.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0105.html">Adam</a><p>モーメンタムと RMSprop の考えを合わせた最適化の方法。よく使われる。AdaBound や AMSBound は、その改良版。</p></li><li><a href="0107.html">二重降下現象</a><p>モデルを大きくしていくと、テストの誤差がいったん下がり、上がり、また下がる現象。</p></li><li><a href="0104.html">RMSprop</a><p>AdaGrad の、学習率が小さくなりすぎる弱点を、最近の勾配を重く見ることで改良した方法。AdaDelta も同じ目的の改良。</p></li><li><a href="0108.html">ハイパーパラメータ</a><p>学習率や層の数など、学習の前に人が決める値。グリッドサーチやランダムサーチで良い値を探す。</p></li><li><a href="0103.html">AdaGrad</a><p>よく更新された重みほど学習率を小さくしていく最適化の方法。学習が進むと更新がほとんど止まる弱点がある。</p></li><li><a href="0102.html">モーメンタム</a><p>前の更新の勢いを引き継いで重みを動かす方法。谷を速く進み、振動を抑える。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

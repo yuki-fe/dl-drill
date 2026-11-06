@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>適合率と再現率とF値の違いを表で比較｜G検定｜ディープラーニング用語ドリル</title>
+<meta name="description" content="どれも分類のモデルの良さを測る指標です。適合率は「陽性と言ったものがどれだけ正しいか」、再現率は「本当の陽性をどれだけ見つけられたか」、F値はその2つのバランスです。">
+<link rel="canonical" href="https://dl.yogo-drill.com/compare/precision-recall-f.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="適合率と再現率とF値の違いを表で比較｜G検定｜ディープラーニング用語ドリル">
+<meta property="og:description" content="どれも分類のモデルの良さを測る指標です。適合率は「陽性と言ったものがどれだけ正しいか」、再現率は「本当の陽性をどれだけ見つけられたか」、F値はその2つのバランスです。">
+<meta property="og:url" content="https://dl.yogo-drill.com/compare/precision-recall-f.html">
+<meta property="og:site_name" content="ディープラーニング用語ドリル">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/layout.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-76EDRWQHN0"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-76EDRWQHN0');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dl.yogo-drill.com/"}, {"@type": "ListItem", "position": 2, "name": "似た用語の違い", "item": "https://dl.yogo-drill.com/compare/index.html"}, {"@type": "ListItem", "position": 3, "name": "適合率と再現率とF値の違い", "item": "https://dl.yogo-drill.com/compare/precision-recall-f.html"}]}</script>
+</head>
+<body class="" data-root="../">
+<a class="skip" href="#content">本文へ移動</a>
+<header class="site-head">
+  <div class="site-head-in">
+    <a class="brand" href="../index.html"><img src="../favicon.svg" alt="" width="28" height="28">ディープラーニング用語ドリル</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html">用語ドリル</a><a href="../test.html">ミニテスト</a><a href="../abbr.html">略語</a><a href="../terms/index.html">用語一覧</a><a href="../typing.html">タイピング</a><a href="../about.html">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+<div id="content"></div>
+
+<main class="prose">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><a href="index.html">似た用語の違い</a><span>›</span><span>適合率と再現率とF値の違い</span></nav>
+  <p class="eyebrow">似た用語を比べる</p>
+  <h1>適合率と再現率とF値の違い</h1>
+  <p class="lead">どれも分類のモデルの良さを測る指標です。適合率は「陽性と言ったものがどれだけ正しいか」、再現率は「本当の陽性をどれだけ見つけられたか」、F値はその2つのバランスです。</p>
+  <h2>表で比べる</h2>
+  <div class="table-scroll"><table class="cmp-table"><thead><tr><th scope="col">観点</th><th scope="col">適合率</th><th scope="col">再現率</th><th scope="col">F値</th></tr></thead><tbody><tr><th scope="row">何の割合か</th><td>陽性と予測したもののうち、本当に陽性だった割合</td><td>本当に陽性のもののうち、陽性と予測できた割合</td><td>適合率と再現率の調和平均</td></tr><tr><th scope="row">混同行列での式</th><td>真陽性 ÷（真陽性＋偽陽性）</td><td>真陽性 ÷（真陽性＋偽陰性）</td><td>2 × 適合率 × 再現率 ÷（適合率＋再現率）</td></tr><tr><th scope="row">重視する場面</th><td>誤って陽性と言うのを避けたいとき（迷惑メールの判定など）</td><td>見逃しを避けたいとき（病気の検査など）</td><td>どちらにも偏らずに評価したいとき</td></tr></tbody></table></div>
+  <h2>見分けるポイント</h2>
+  <ul><li>適合率は「予測した側」から見る。分母は陽性と予測した数</li><li>再現率は「本当の正解の側」から見る。分母は本当に陽性の数</li><li>「見逃しが困る」なら再現率、「空振りが困る」なら適合率</li><li>適合率と再現率は、片方を上げるともう片方が下がりやすい（トレードオフ）</li></ul>
+  <h2>試験での出され方</h2>
+  <p>混同行列の数字が与えられて、適合率や再現率を計算させる問題がよく出ます。分母が「陽性と予測した数」か「本当に陽性の数」かを取り違えないようにしましょう。「病気の見逃しを減らしたいときに重視する指標」のような場面の問題も出ます。</p>
+  <h2>それぞれの用語</h2>
+  <ul class="term-list"><li><a href="../terms/0071.html">適合率</a><p>陽性と予測したもののうち、本当に陽性だった割合。誤って陽性と言うのを避けたいときに大事。</p></li><li><a href="../terms/0072.html">再現率</a><p>本当に陽性のもののうち、陽性と予測できた割合。見逃しを避けたいときに大事。</p></li><li><a href="../terms/0073.html">F値</a><p>適合率と再現率の調和平均。2つのバランスを1つの数で見る。</p></li></ul>
+  <div class="cta-row">
+    <a class="btn primary" href="../index.html#quiz"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>4択クイズで確かめる</a>
+    <a class="btn" href="../index.html#card">カードで練習</a>
+  </div>
+  
+  <h2>ほかの比べる用語</h2>
+  <ul class="b-links inline"><li><a href="sigmoid-tanh-relu.html">シグモイド関数とtanh関数とReLU関数の違い</a></li><li><a href="l1-l2-regularization.html">L1正則化とL2正則化の違い</a></li><li><a href="q-learning-sarsa.html">Q学習とSARSAの違い</a></li><li><a href="bagging-boosting.html">バギングとブースティングとランダムフォレストの違い</a></li><li><a href="pca-tsne.html">主成分分析（PCA）とt-SNEの違い</a></li><li><a href="rnn-lstm-gru.html">RNNとLSTMとGRUの違い</a></li><li><a href="semantic-instance-segmentation.html">セマンティックセグメンテーションとインスタンスセグメンテーションの違い</a></li><li><a href="gan-vae-diffusion.html">GANとVAEと拡散モデルの違い</a></li><li><a href="onehot-embedding.html">ワンホットベクトルと分散表現の違い</a></li><li><a href="collaborative-content-filtering.html">協調フィルタリングとコンテンツベースフィルタリングの違い</a></li><li><a href="adagrad-rmsprop-adam.html">AdaGradとRMSpropとAdamの違い</a></li><li><a href="batch-layer-normalization.html">バッチ正規化とレイヤー正規化の違い</a></li><li><a href="cnn-rnn.html">CNN（畳み込み）とRNNの違い</a></li><li><a href="distillation-pruning-quantization.html">蒸留とプルーニングと量子化の違い</a></li></ul>
+</main>
+
+<footer class="site-foot">
+  <nav aria-label="フッター">
+    <a href="https://yogo-drill.com/">用語ドリル（ほかの資格のサイト）</a>
+    <a href="../terms/index.html">用語一覧</a>
+    <a href="../about.html">運営者情報</a>
+    <a href="../privacy.html">プライバシーポリシー・免責事項</a>
+  </nav>
+  <p>姉妹サイト: <a href="https://genai.yogo-drill.com/">生成AI用語ドリル</a>／<a href="https://ip.yogo-drill.com/">ITパスポート用語ドリル</a>／<a href="https://fe.yogo-drill.com/">FE用語ドリル</a></p>
+  <p>G検定は、一般社団法人日本ディープラーニング協会（JDLA）が実施する検定です。当サイトは、検定の実施団体とは関係のない個人の学習サイトです。</p>
+  <p>© 2026 Yuki-fe</p>
+</footer>
+
+</body>
+</html>

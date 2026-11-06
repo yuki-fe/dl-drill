@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>蒸留とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="蒸留（ディープラーニングの応用・解釈性と軽量化）: 大きなモデル（教師）の出力をまねるように、小さなモデル（生徒）を学習させて、モデルを軽くする方法。">
+<meta name="description" content="蒸留（ディープラーニングの応用・解釈性と軽量化）: 大きなモデル（教師）の出力をまねるように、小さなモデル（生徒）を学習させて、モデルを軽くする方法。【覚え方】大きくて賢い先生（教師モデル）の答え方を、小さな生徒（生徒モデル）がまねして学…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0220.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="蒸留とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="蒸留（ディープラーニングの応用・解釈性と軽量化）: 大きなモデル（教師）の出力をまねるように、小さなモデル（生徒）を学習させて、モデルを軽くする方法。">
+<meta property="og:description" content="蒸留（ディープラーニングの応用・解釈性と軽量化）: 大きなモデル（教師）の出力をまねるように、小さなモデル（生徒）を学習させて、モデルを軽くする方法。【覚え方】大きくて賢い先生（教師モデル）の答え方を、小さな生徒（生徒モデル）がまねして学…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0220.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>大きくて賢い先生（教師モデル）の答え方を、小さな生徒（生徒モデル）がまねして学ぶ、と考えます。正解のラベルだけでなく、先生の出した確率（どれとどれが似ているか）も手本にするので、小さなモデルでも賢くなりやすいです。</p></section><section class="detail"><h2>試験での出され方</h2><p>モデルを軽くする方法として、プルーニング・量子化と並べて問われます。「教師モデル」「生徒モデル」が出てきたら蒸留です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0221.html">プルーニング</a>との違い</dt><dd>プルーニングは、元のモデルから重要度の低い部分を取り除いて軽くする。蒸留は、別の小さなモデルを学習させる。</dd><dt><a href="0222.html">量子化</a>との違い</dt><dd>量子化は、重みなどの数を少ないビットで表して軽くする。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="Permutation Importance" data-href="0219.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0219.html">Permutation Importance</a><p>ある特徴の値をばらばらに入れ替えたときに、性能がどれだけ下がるかで、その特徴の重要度を測る方法。</p></li><li><a href="0221.html">プルーニング</a><p>重要度の低い重みやニューロンを取り除いて、モデルを軽くする方法（枝刈り）。</p></li><li><a href="0218.html">SHAP</a><p>ゲーム理論のシャープレイ値を使って、それぞれの特徴が予測にどれだけ貢献したかを示す方法。</p></li><li><a href="0222.html">量子化</a><p>重みなどの数を、少ないビット数で表して、モデルを軽く・速くする方法。</p></li><li><a href="0217.html">LIME</a><p>1つの予測の周りで、単純なモデルで近似して、どの特徴が判断に効いたかを説明する方法。</p></li><li><a href="0223.html">宝くじ仮説</a><p>大きなネットワークの中には、単独で学習しても同じくらいの性能が出る、小さなネットワーク（当たりくじ）がふくまれているという仮説。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/distillation-pruning-quantization.html">蒸留とプルーニングと量子化の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

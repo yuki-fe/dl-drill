@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>リカレントニューラルネットワーク（RNN）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="リカレントニューラルネットワーク（RNN）（ディープラーニングの技術・層と構造）: 前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。">
+<meta name="description" content="リカレントニューラルネットワーク（RNN）（ディープラーニングの技術・層と構造）: 前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。【覚え方】前の時点の隠れ層の出力を、次の時点の入力に戻して（リカレント…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0119.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="リカレントニューラルネットワーク（RNN）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="リカレントニューラルネットワーク（RNN）（ディープラーニングの技術・層と構造）: 前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。">
+<meta property="og:description" content="リカレントニューラルネットワーク（RNN）（ディープラーニングの技術・層と構造）: 前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。【覚え方】前の時点の隠れ層の出力を、次の時点の入力に戻して（リカレント…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0119.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>前の時点の隠れ層の出力を、次の時点の入力に戻して（リカレント＝再帰）使います。前の言葉を覚えたまま次の言葉を読むので、文章や時系列のような順番のあるデータを扱えます。ただし、遠い過去の情報ほど薄れてしまいます。</p></section><section class="detail"><h2>試験での出され方</h2><p>長い系列では勾配消失や勾配爆発が起きやすい弱点と、それを改良した LSTM・GRU との関係が問われます。学習方法の BPTT も一緒に出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0122.html">LSTM</a>との違い</dt><dd>LSTM は、ゲートと記憶セルで、長い系列でも大事な情報を覚えておけるようにした RNN。</dd><dt><a href="0110.html">畳み込み層</a>との違い</dt><dd>畳み込み層（CNN）は、画像の中の形の特徴を取り出すのが得意。RNN は、順番のあるデータを扱うのが得意。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="LSTM" data-href="0122.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0118.html">スキップ結合</a><p>層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。</p></li><li><a href="0120.html">BPTT</a><p>RNN を時間の方向に展開して、誤差逆伝播法で学習する方法。</p></li><li><a href="0117.html">レイヤー正規化</a><p>1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。</p></li><li><a href="0121.html">エルマンネットワークとジョルダンネットワーク</a><p>初期の RNN。エルマンネットワークは隠れ層の出力を、ジョルダンネットワークは出力層の出力を、次の時点の入力に戻す。</p></li><li><a href="0116.html">バッチ正規化</a><p>ミニバッチごとに、各層の値を平均 0・分散 1 に整える方法。学習が安定して速くなる。</p></li><li><a href="0122.html">LSTM</a><p>ゲート機構と記憶セル（CEC）で、長い時系列でも大事な情報を覚えておけるようにした RNN。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/rnn-lstm-gru.html">RNNとLSTMとGRUの違い</a></li><li><a href="../compare/cnn-rnn.html">CNN（畳み込み）とRNNの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

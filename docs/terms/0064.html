@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SARSAとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="SARSA（機械学習・強化学習）: 行動価値を、次の状態で実際に選んだ行動の価値を使って更新する強化学習の方法。">
+<meta name="description" content="SARSA（機械学習・強化学習）: 行動価値を、次の状態で実際に選んだ行動の価値を使って更新する強化学習の方法。【覚え方】名前は、更新に使う State（状態）・Action（行動）・Reward（報酬）・State・Action の頭文…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0064.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SARSAとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="SARSA（機械学習・強化学習）: 行動価値を、次の状態で実際に選んだ行動の価値を使って更新する強化学習の方法。">
+<meta property="og:description" content="SARSA（機械学習・強化学習）: 行動価値を、次の状態で実際に選んだ行動の価値を使って更新する強化学習の方法。【覚え方】名前は、更新に使う State（状態）・Action（行動）・Reward（報酬）・State・Action の頭文…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0064.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>名前は、更新に使う State（状態）・Action（行動）・Reward（報酬）・State・Action の頭文字です。最後の Action が「実際に次に選んだ行動」なので、その行動の価値で更新する、と名前から思い出せます。</p></section><section class="detail"><h2>試験での出され方</h2><p>Q学習と並べて、更新のしかたの違いが問われます。「実際に選択した行動」と出てきたら SARSA です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0063.html">Q学習</a>との違い</dt><dd>Q学習は、次の状態で最も良い行動の価値（最大の Q値）を使って更新する。SARSA は、実際に選んだ行動の価値を使う。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="割引率" data-href="0061.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0063.html">Q学習</a><p>行動価値（Q値）を、次の状態で最も良い行動の価値を使って更新していく強化学習の方法。</p></li><li><a href="0065.html">ε-greedy方策</a><p>ふだんは今いちばん良い行動を選び、確率 ε でランダムな行動を試す方法。活用と探索のバランスをとる。</p></li><li><a href="0062.html">状態価値関数と行動価値関数</a><p>状態価値関数は、ある状態がどれだけ良いか。行動価値関数（Q値）は、ある状態である行動をとることがどれだけ良いか。</p></li><li><a href="0066.html">バンディットアルゴリズム</a><p>どの選択肢が良いかわからない中で、試す（探索）と良いものを使う（活用）のバランスをとる方法。UCB方策など。</p></li><li><a href="0061.html">割引率</a><p>強化学習で、先の報酬ほど価値を小さく見積もるための率。0〜1 の値。</p></li><li><a href="0067.html">方策勾配法</a><p>行動の選び方（方策）そのものを、報酬が増える方向に直接学習する方法。REINFORCE など。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/q-learning-sarsa.html">Q学習とSARSAの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

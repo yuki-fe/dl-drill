@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>レイヤー正規化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="レイヤー正規化（ディープラーニングの技術・層と構造）: 1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。">
+<meta name="description" content="レイヤー正規化（ディープラーニングの技術・層と構造）: 1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。【覚え方】ミニバッチの中のほかのデータは見ずに、…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0117.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="レイヤー正規化とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="レイヤー正規化（ディープラーニングの技術・層と構造）: 1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。">
+<meta property="og:description" content="レイヤー正規化（ディープラーニングの技術・層と構造）: 1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。【覚え方】ミニバッチの中のほかのデータは見ずに、…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0117.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>ミニバッチの中のほかのデータは見ずに、1つのデータの中だけで値を整えます。そのため、ミニバッチが小さくても、系列の長さがばらばらでも使えます。Transformer で使われる、と結びつけて覚えましょう。</p></section><section class="detail"><h2>試験での出され方</h2><p>バッチ正規化・インスタンス正規化・グループ正規化と並べて、どの範囲で整えるかの違いが問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0116.html">バッチ正規化</a>との違い</dt><dd>バッチ正規化は、ミニバッチの中の複数のデータを使って、特徴ごとに値を整える。CNN でよく使われる。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="リカレントニューラルネットワーク（RNN）" data-href="0119.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0116.html">バッチ正規化</a><p>ミニバッチごとに、各層の値を平均 0・分散 1 に整える方法。学習が安定して速くなる。</p></li><li><a href="0118.html">スキップ結合</a><p>層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。</p></li><li><a href="0115.html">グローバルアベレージプーリング（GAP）</a><p>特徴マップ全体の平均を1つの値にするプーリング。全結合層の代わりに使い、パラメータを減らせる。</p></li><li><a href="0119.html">リカレントニューラルネットワーク（RNN）</a><p>前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。</p></li><li><a href="0114.html">プーリング層</a><p>決まった範囲の最大値（最大値プーリング）や平均（平均値プーリング）をとって、特徴マップを小さくする層。位置の少しのずれに強くなる（不変性の獲得）。</p></li><li><a href="0120.html">BPTT</a><p>RNN を時間の方向に展開して、誤差逆伝播法で学習する方法。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/batch-layer-normalization.html">バッチ正規化とレイヤー正規化の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

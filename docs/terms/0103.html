@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AdaGradとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="AdaGrad（ディープラーニングの技術・最適化）: よく更新された重みほど学習率を小さくしていく最適化の方法。学習が進むと更新がほとんど止まる弱点がある。">
+<meta name="description" content="AdaGrad（ディープラーニングの技術・最適化）: よく更新された重みほど学習率を小さくしていく最適化の方法。学習が進むと更新がほとんど止まる弱点がある。【覚え方】「Ada」は adaptive（適応的）の略です。何度も大きく更新された…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0103.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AdaGradとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="AdaGrad（ディープラーニングの技術・最適化）: よく更新された重みほど学習率を小さくしていく最適化の方法。学習が進むと更新がほとんど止まる弱点がある。">
+<meta property="og:description" content="AdaGrad（ディープラーニングの技術・最適化）: よく更新された重みほど学習率を小さくしていく最適化の方法。学習が進むと更新がほとんど止まる弱点がある。【覚え方】「Ada」は adaptive（適応的）の略です。何度も大きく更新された…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0103.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「Ada」は adaptive（適応的）の略です。何度も大きく更新された重みは「もう十分動いた」と見て、学習率を小さくしていきます。ただし勾配をずっと足し続けるので、学習が進むと学習率が小さくなりすぎ、更新がほとんど止まってしまいます。</p></section><section class="detail"><h2>試験での出され方</h2><p>この弱点（学習率が小さくなりすぎる）と、それを改良した RMSprop・AdaDelta の関係が問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0104.html">RMSprop</a>との違い</dt><dd>RMSprop は、昔の勾配の影響を少しずつ薄めて、最近の勾配を重く見ることで、AdaGrad の弱点を改良したもの。</dd><dt><a href="0105.html">Adam</a>との違い</dt><dd>Adam は、モーメンタムと RMSprop の考えを合わせたもの。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="モーメンタム" data-href="0102.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0102.html">モーメンタム</a><p>前の更新の勢いを引き継いで重みを動かす方法。谷を速く進み、振動を抑える。</p></li><li><a href="0104.html">RMSprop</a><p>AdaGrad の、学習率が小さくなりすぎる弱点を、最近の勾配を重く見ることで改良した方法。AdaDelta も同じ目的の改良。</p></li><li><a href="0101.html">鞍点</a><p>ある方向から見ると最小、別の方向から見ると最大になっている点。学習が止まりやすい。</p></li><li><a href="0105.html">Adam</a><p>モーメンタムと RMSprop の考えを合わせた最適化の方法。よく使われる。AdaBound や AMSBound は、その改良版。</p></li><li><a href="0100.html">局所最適解と大域最適解</a><p>局所最適解は、その周りでは最も良いが全体では最良でない解。大域最適解は、全体で最も良い解。</p></li><li><a href="0106.html">早期終了</a><p>検証用のデータでの誤差が増え始めたら学習を止めて、過学習を防ぐ方法（アーリーストッピング）。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/adagrad-rmsprop-adam.html">AdaGradとRMSpropとAdamの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

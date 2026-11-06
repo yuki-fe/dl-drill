@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>似た用語の違い（15組）｜G検定｜ディープラーニング用語ドリル</title>
+<meta name="description" content="G検定でまぎらわしい用語15組（適合率と再現率、L1正則化とL2正則化など）の違いを、表で比べてまとめました。">
+<link rel="canonical" href="https://dl.yogo-drill.com/compare/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="似た用語の違い（15組）｜G検定｜ディープラーニング用語ドリル">
+<meta property="og:description" content="G検定でまぎらわしい用語15組（適合率と再現率、L1正則化とL2正則化など）の違いを、表で比べてまとめました。">
+<meta property="og:url" content="https://dl.yogo-drill.com/compare/index.html">
+<meta property="og:site_name" content="ディープラーニング用語ドリル">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/layout.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-76EDRWQHN0"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-76EDRWQHN0');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://dl.yogo-drill.com/"}, {"@type": "ListItem", "position": 2, "name": "似た用語の違い", "item": "https://dl.yogo-drill.com/compare/index.html"}]}</script>
+</head>
+<body class="" data-root="../">
+<a class="skip" href="#content">本文へ移動</a>
+<header class="site-head">
+  <div class="site-head-in">
+    <a class="brand" href="../index.html"><img src="../favicon.svg" alt="" width="28" height="28">ディープラーニング用語ドリル</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html">用語ドリル</a><a href="../test.html">ミニテスト</a><a href="../abbr.html">略語</a><a href="../terms/index.html">用語一覧</a><a href="../typing.html">タイピング</a><a href="../about.html">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+<div id="content"></div>
+
+<main class="prose wide">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><span>似た用語を比べる</span></nav>
+  <h1>似た用語の違い<small>G検定でまぎらわしい用語 15組</small></h1>
+  <p>試験では、似た用語の違いがよく問われます。2つ（3つ）の用語を表で並べて、どこが違うかを確かめましょう。</p>
+  <ul class="term-list"><li><a href="sigmoid-tanh-relu.html">シグモイド関数とtanh関数とReLU関数の違い</a><p>どれもニューラルネットワークの活性化関数です。出力の範囲と、層を深くしたときの勾配の消えにくさが違います。隠れ層では、勾配が消えにくい ReLU 関数がよく使われます。</p></li><li><a href="l1-l2-regularization.html">L1正則化とL2正則化の違い</a><p>どちらも、重みが大きくなりすぎないように罰を加えて、過学習を防ぐ方法です。L1正則化は不要な重みを0にしやすく、L2正則化は重みを全体に小さくします。</p></li><li><a href="precision-recall-f.html">適合率と再現率とF値の違い</a><p>どれも分類のモデルの良さを測る指標です。適合率は「陽性と言ったものがどれだけ正しいか」、再現率は「本当の陽性をどれだけ見つけられたか」、F値はその2つのバランスです。</p></li><li><a href="q-learning-sarsa.html">Q学習とSARSAの違い</a><p>どちらも行動価値（Q値）を少しずつ更新していく強化学習の方法です。違いは、更新のときに使う「次の行動の価値」が、最も良い行動のものか、実際に選んだ行動のものか、です。</p></li><li><a href="bagging-boosting.html">バギングとブースティングとランダムフォレストの違い</a><p>どれも複数のモデルを組み合わせるアンサンブル学習です。バギングはモデルを並列に別々に作り、ブースティングは前の間違いを直しながら順番に作ります。ランダムフォレストはバギングに決定木を使ったものです。</p></li><li><a href="pca-tsne.html">主成分分析（PCA）とt-SNEの違い</a><p>どちらも、たくさんの特徴（次元）を持つデータを、少ない次元にまとめる次元削減の方法です。主成分分析はばらつきの大きい方向を残し、t-SNE は近いデータどうしの近さを残して、2〜3次元の図にするのが得意です。</p></li><li><a href="rnn-lstm-gru.html">RNNとLSTMとGRUの違い</a><p>どれも、前の時点の情報を次に引き継いで、文章や時系列のデータを扱うネットワークです。ふつうの RNN は長い系列を覚えるのが苦手で、それをゲートで改良したのが LSTM、LSTM を簡単にしたのが GRU です。</p></li><li><a href="semantic-instance-segmentation.html">セマンティックセグメンテーションとインスタンスセグメンテーションの違い</a><p>どちらも、画像を画素（ピクセル）ごとに分けるタスクです。セマンティックは種類ごとに塗り分けるだけで、インスタンスは同じ種類の物でも1つずつ区別します。</p></li><li><a href="gan-vae-diffusion.html">GANとVAEと拡散モデルの違い</a><p>どれも新しい画像などのデータを作る生成モデルです。GAN は2つのネットワークを競わせ、VAE はデータを確率分布として縮めて戻し、拡散モデルはノイズを少しずつ取り除いてデータを作ります。</p></li><li><a href="onehot-embedding.html">ワンホットベクトルと分散表現の違い</a><p>どちらも単語をベクトル（数の並び）で表す方法です。ワンホットベクトルは単語ごとに1か所だけ1を立てるので意味の近さを表せず、分散表現は意味の近い単語ほど近いベクトルになります。</p></li><li><a href="collaborative-content-filtering.html">協調フィルタリングとコンテンツベースフィルタリングの違い</a><p>どちらも、利用者におすすめの商品などを決めるレコメンドの方法です。協調フィルタリングは「似た好みの人」の行動を使い、コンテンツベースフィルタリングは「商品そのものの特徴」を使います。</p></li><li><a href="adagrad-rmsprop-adam.html">AdaGradとRMSpropとAdamの違い</a><p>どれも、重みごとに学習率を自動で調整する最適化の方法です。AdaGrad の「学習率が小さくなりすぎる」弱点を RMSprop が改良し、RMSprop とモーメンタムの考えを合わせたのが Adam です。</p></li><li><a href="batch-layer-normalization.html">バッチ正規化とレイヤー正規化の違い</a><p>どちらも、層の値を平均0・分散1に整えて、学習を安定させる方法です。バッチ正規化はミニバッチの中の複数のデータで整え、レイヤー正規化は1つのデータの中で整えます。</p></li><li><a href="cnn-rnn.html">CNN（畳み込み）とRNNの違い</a><p>CNN は畳み込み層で画像の中の形の特徴を取り出すネットワーク、RNN は前の時点の情報を引き継いで、文章や時系列のような順番のあるデータを扱うネットワークです。</p></li><li><a href="distillation-pruning-quantization.html">蒸留とプルーニングと量子化の違い</a><p>どれも、学習したモデルを軽く・速くして、スマホなどでも動かせるようにする方法です。蒸留は小さなモデルに大きなモデルをまねさせ、プルーニングは要らない部分を削り、量子化は数を少ないビットで表します。</p></li></ul>
+  <p><a href="../terms/index.html">用語一覧（293語）へ</a></p>
+</main>
+
+<footer class="site-foot">
+  <nav aria-label="フッター">
+    <a href="https://yogo-drill.com/">用語ドリル（ほかの資格のサイト）</a>
+    <a href="../terms/index.html">用語一覧</a>
+    <a href="../about.html">運営者情報</a>
+    <a href="../privacy.html">プライバシーポリシー・免責事項</a>
+  </nav>
+  <p>姉妹サイト: <a href="https://genai.yogo-drill.com/">生成AI用語ドリル</a>／<a href="https://ip.yogo-drill.com/">ITパスポート用語ドリル</a>／<a href="https://fe.yogo-drill.com/">FE用語ドリル</a></p>
+  <p>G検定は、一般社団法人日本ディープラーニング協会（JDLA）が実施する検定です。当サイトは、検定の実施団体とは関係のない個人の学習サイトです。</p>
+  <p>© 2026 Yuki-fe</p>
+</footer>
+
+</body>
+</html>

@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>word2vecとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="word2vec（ディープラーニングの応用・自然言語処理）: 単語の分散表現を学ぶ方法。周りの単語から中心の単語を当てる CBOW と、中心の単語から周りを当てるスキップグラムがある。">
+<meta name="description" content="word2vec（ディープラーニングの応用・自然言語処理）: 単語の分散表現を学ぶ方法。周りの単語から中心の単語を当てる CBOW と、中心の単語から周りを当てるスキップグラムがある。【覚え方】「似た使われ方をする単語は、意味も似ている」…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0170.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="word2vecとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="word2vec（ディープラーニングの応用・自然言語処理）: 単語の分散表現を学ぶ方法。周りの単語から中心の単語を当てる CBOW と、中心の単語から周りを当てるスキップグラムがある。">
+<meta property="og:description" content="word2vec（ディープラーニングの応用・自然言語処理）: 単語の分散表現を学ぶ方法。周りの単語から中心の単語を当てる CBOW と、中心の単語から周りを当てるスキップグラムがある。【覚え方】「似た使われ方をする単語は、意味も似ている」…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0170.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「似た使われ方をする単語は、意味も似ている」という考えで学びます。周りの単語から真ん中の単語を当てるのが CBOW、真ん中の単語から周りの単語を当てるのがスキップグラムです。向きが逆、と覚えましょう。</p></section><section class="detail"><h2>試験での出され方</h2><p>CBOW とスキップグラムの違いがよく問われます。「王様 − 男 ＋ 女 ≒ 女王」のように、ベクトルの計算で意味の関係を表せる例も出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0171.html">fastText</a>との違い</dt><dd>fastText は、単語をさらに細かい文字の組に分けて学ぶ、word2vec の発展版。知らない単語にも対応しやすい。</dd><dt><a href="0172.html">ELMo</a>との違い</dt><dd>ELMo は、文脈によって変わる単語の表現を学ぶ。word2vec では、1つの単語のベクトルは文脈によらず1つ。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="BERT" data-href="0173.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0169.html">分散表現（単語埋め込み）</a><p>単語を、意味の近いものほど近くなる、少ない次元のベクトルで表す方法。</p></li><li><a href="0171.html">fastText</a><p>単語をさらに細かい文字の組に分けて学ぶ、word2vec を発展させた方法。知らない単語にも対応しやすい。</p></li><li><a href="0168.html">ワンホットベクトル</a><p>単語を、その単語の位置だけが 1、ほかが 0 のベクトルで表す方法。単語どうしの意味の近さは表せない。</p></li><li><a href="0172.html">ELMo</a><p>双方向の LSTM で、文脈によって変わる単語の表現を学ぶモデル。</p></li><li><a href="0167.html">n-gram</a><p>文章を、となり合う n 個の単語（または文字）の組で区切ったもの。</p></li><li><a href="0173.html">BERT</a><p>Transformer のエンコーダを使い、文の前後の両方の文脈から学ぶ言語モデル。隠した単語を当てる学習などで事前学習する。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

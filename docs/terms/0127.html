@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Attentionとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="Attention（ディープラーニングの技術・Attentionと生成モデル）: 入力のどこに注目すればよいかを重み付けする仕組み。長い系列でも、必要な情報を取り出せる。">
+<meta name="description" content="Attention（ディープラーニングの技術・Attentionと生成モデル）: 入力のどこに注目すればよいかを重み付けする仕組み。長い系列でも、必要な情報を取り出せる。【覚え方】人が文章を訳すとき、今訳している単語に関係の深い元の単語に…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0127.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Attentionとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="Attention（ディープラーニングの技術・Attentionと生成モデル）: 入力のどこに注目すればよいかを重み付けする仕組み。長い系列でも、必要な情報を取り出せる。">
+<meta property="og:description" content="Attention（ディープラーニングの技術・Attentionと生成モデル）: 入力のどこに注目すればよいかを重み付けする仕組み。長い系列でも、必要な情報を取り出せる。【覚え方】人が文章を訳すとき、今訳している単語に関係の深い元の単語に…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0127.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>人が文章を訳すとき、今訳している単語に関係の深い元の単語に目を向けるのと同じです。入力のどこに注目するかを重み（注意の度合い）で表し、必要な情報を取り出します。系列が長くても、離れた場所の情報を直接使えます。</p></section><section class="detail"><h2>試験での出され方</h2><p>Seq2Seq の機械翻訳に Attention を入れた効果や、Self-Attention・Source-Target Attention との違いが問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0128.html">Self-Attention</a>との違い</dt><dd>Self-Attention は、同じ系列の中の要素どうしの関係を計算する Attention。</dd><dt><a href="0129.html">Source-Target Attention</a>との違い</dt><dd>Source-Target Attention は、デコーダの側から、エンコーダの出力のどこに注目するかを計算する Attention。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="位置エンコーディング" data-href="0132.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0126.html">Seq2Seq</a><p>エンコーダで入力の系列を読み込み、デコーダで出力の系列を作るモデル。機械翻訳などに使う。</p></li><li><a href="0128.html">Self-Attention</a><p>同じ系列の中の、各要素どうしの関係を計算する Attention。クエリ・キー・バリューを使う。</p></li><li><a href="0129.html">Source-Target Attention</a><p>デコーダの側から、エンコーダの出力のどこに注目するかを計算する Attention。</p></li><li><a href="0130.html">Multi-Head Attention</a><p>Attention を複数（ヘッド）並べて、いろいろな関係を同時にとらえる仕組み。</p></li><li><a href="0131.html">Transformer</a><p>RNN を使わず、Attention だけで系列を処理するモデル。並列に計算でき、今の大規模言語モデルの土台。</p></li><li><a href="0132.html">位置エンコーディング</a><p>Transformer に、単語の順番の情報を与えるために、入力に足す値。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

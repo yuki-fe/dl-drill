@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>シグモイド関数とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="シグモイド関数（ディープラーニングの技術・活性化関数）: 入力を 0〜1 の値に変える活性化関数。微分の最大値が小さく、層が深いと勾配消失が起きやすい。">
+<meta name="description" content="シグモイド関数（ディープラーニングの技術・活性化関数）: 入力を 0〜1 の値に変える活性化関数。微分の最大値が小さく、層が深いと勾配消失が起きやすい。【覚え方】なめらかな S 字のグラフで、どんな入力も 0〜1 に押し込みます。出力を確…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0084.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="シグモイド関数とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="シグモイド関数（ディープラーニングの技術・活性化関数）: 入力を 0〜1 の値に変える活性化関数。微分の最大値が小さく、層が深いと勾配消失が起きやすい。">
+<meta property="og:description" content="シグモイド関数（ディープラーニングの技術・活性化関数）: 入力を 0〜1 の値に変える活性化関数。微分の最大値が小さく、層が深いと勾配消失が起きやすい。【覚え方】なめらかな S 字のグラフで、どんな入力も 0〜1 に押し込みます。出力を確…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0084.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>なめらかな S 字のグラフで、どんな入力も 0〜1 に押し込みます。出力を確率として読めるのが長所です。ただし微分の最大値が 0.25 と小さいので、層を重ねて掛け算がくり返されると、勾配がどんどん小さくなります（勾配消失）。</p></section><section class="detail"><h2>試験での出され方</h2><p>勾配消失が起きやすい理由（微分の最大値が 0.25）や、出力の範囲（0〜1）が問われます。2クラス分類の出力層や、ロジスティック回帰でも使われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0085.html">tanh関数</a>との違い</dt><dd>tanh関数は、出力が −1〜1 で、微分の最大値が 1。シグモイド関数より勾配が消えにくい。</dd><dt><a href="0086.html">ReLU関数</a>との違い</dt><dd>ReLU関数は、入力が正なら微分が常に 1 なので、勾配が消えにくい。隠れ層でよく使われる。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="tanh関数" data-href="0085.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0085.html">tanh関数</a><p>入力を −1〜1 の値に変える活性化関数。シグモイド関数より勾配が消えにくい。</p></li><li><a href="0086.html">ReLU関数</a><p>入力が 0 以下なら 0、正ならそのまま出す活性化関数。勾配が消えにくく、よく使われる。</p></li><li><a href="0087.html">Leaky ReLU関数</a><p>ReLU関数の、入力が 0 以下のときにも少しだけ傾きを持たせたもの。</p></li><li><a href="0088.html">ソフトマックス関数</a><p>複数の出力を、合計が 1 になる確率に変える関数。多クラス分類の出力層で使う。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/sigmoid-tanh-relu.html">シグモイド関数とtanh関数とReLU関数の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

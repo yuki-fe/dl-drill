@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>セマンティックセグメンテーションとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="セマンティックセグメンテーション（ディープラーニングの応用・画像認識）: 画像の1つ1つの画素が、どの種類の物かを分けるタスク。同じ種類の物は区別しない。">
+<meta name="description" content="セマンティックセグメンテーション（ディープラーニングの応用・画像認識）: 画像の1つ1つの画素が、どの種類の物かを分けるタスク。同じ種類の物は区別しない。【覚え方】画像を、種類ごとに色を決めた塗り絵のように塗り分ける、と考えます。人が3人…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0156.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="セマンティックセグメンテーションとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="セマンティックセグメンテーション（ディープラーニングの応用・画像認識）: 画像の1つ1つの画素が、どの種類の物かを分けるタスク。同じ種類の物は区別しない。">
+<meta property="og:description" content="セマンティックセグメンテーション（ディープラーニングの応用・画像認識）: 画像の1つ1つの画素が、どの種類の物かを分けるタスク。同じ種類の物は区別しない。【覚え方】画像を、種類ごとに色を決めた塗り絵のように塗り分ける、と考えます。人が3人…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0156.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>画像を、種類ごとに色を決めた塗り絵のように塗り分ける、と考えます。人が3人写っていても、全員を同じ「人」の色で塗ります。1つ1つの物は区別しません。</p></section><section class="detail"><h2>試験での出され方</h2><p>インスタンスセグメンテーション・パノプティックセグメンテーション・物体検出と並べて、何を区別するかの違いが問われます。FCN・U-Net などのモデル名も出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0157.html">インスタンスセグメンテーション</a>との違い</dt><dd>インスタンスセグメンテーションは、同じ種類の物でも1つずつ区別して塗り分ける。</dd><dt><a href="0151.html">物体検出</a>との違い</dt><dd>物体検出は、物の種類と位置を四角い枠で示す。セグメンテーションは、画素ごとに分ける。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="YOLO" data-href="0153.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0155.html">FPN</a><p>大きさの違う特徴マップを組み合わせて、大小さまざまな物を検出しやすくする仕組み。</p></li><li><a href="0157.html">インスタンスセグメンテーション</a><p>物体ごとに画素の範囲を分けるタスク。同じ種類でも1つずつ区別する。両方を合わせたものがパノプティックセグメンテーション。</p></li><li><a href="0154.html">SSD</a><p>大きさの違う複数の特徴マップを使って、1回の処理で物体を検出するモデル。</p></li><li><a href="0158.html">FCN</a><p>全結合層を使わず、すべて畳み込み層で作った、画素ごとに分類するセグメンテーションのモデル。</p></li><li><a href="0153.html">YOLO</a><p>画像を1回見るだけで、物の位置と種類を同時に予測する、速い物体検出のモデル。</p></li><li><a href="0159.html">U-Net</a><p>縮める側の特徴を、広げる側にスキップ結合でつなぐ U 字の形のセグメンテーションのモデル。医療画像でよく使われる。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/semantic-instance-segmentation.html">セマンティックセグメンテーションとインスタンスセグメンテーションの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

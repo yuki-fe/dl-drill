@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Transformerとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="Transformer（ディープラーニングの技術・Attentionと生成モデル）: RNN を使わず、Attention だけで系列を処理するモデル。並列に計算でき、今の大規模言語モデルの土台。">
+<meta name="description" content="Transformer（ディープラーニングの技術・Attentionと生成モデル）: RNN を使わず、Attention だけで系列を処理するモデル。並列に計算でき、今の大規模言語モデルの土台。【覚え方】RNN のように1語ずつ順番に読…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0131.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Transformerとは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="Transformer（ディープラーニングの技術・Attentionと生成モデル）: RNN を使わず、Attention だけで系列を処理するモデル。並列に計算でき、今の大規模言語モデルの土台。">
+<meta property="og:description" content="Transformer（ディープラーニングの技術・Attentionと生成モデル）: RNN を使わず、Attention だけで系列を処理するモデル。並列に計算でき、今の大規模言語モデルの土台。【覚え方】RNN のように1語ずつ順番に読…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0131.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>RNN のように1語ずつ順番に読むのをやめ、Attention だけで文全体の関係を一度に計算するモデルです。順番に処理しなくてよいので並列に計算でき、大量のデータで学習できるようになりました。2017年の論文「Attention Is All You Need」で発表されました。</p></section><section class="detail"><h2>試験での出され方</h2><p>RNN を使わない点、Self-Attention・Multi-Head Attention・位置エンコーディングなどの部品が問われます。BERT や GPT などの大規模言語モデルの土台になった点も大事です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0119.html">リカレントニューラルネットワーク（RNN）</a>との違い</dt><dd>RNN は、系列を順番に処理するので並列に計算しにくい。Transformer は Attention だけで並列に処理する。</dd><dt><a href="0132.html">位置エンコーディング</a>との違い</dt><dd>位置エンコーディングは、順番の情報を持たない Transformer に、単語の順番を伝えるために足す値。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="Multi-Head Attention" data-href="0130.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0130.html">Multi-Head Attention</a><p>Attention を複数（ヘッド）並べて、いろいろな関係を同時にとらえる仕組み。</p></li><li><a href="0132.html">位置エンコーディング</a><p>Transformer に、単語の順番の情報を与えるために、入力に足す値。</p></li><li><a href="0129.html">Source-Target Attention</a><p>デコーダの側から、エンコーダの出力のどこに注目するかを計算する Attention。</p></li><li><a href="0133.html">オートエンコーダ</a><p>入力を小さく縮め（エンコーダ）、元に戻す（デコーダ）ように学ぶネットワーク。次元削減や事前学習に使う。重ねたものは積層オートエンコーダ。</p></li><li><a href="0128.html">Self-Attention</a><p>同じ系列の中の、各要素どうしの関係を計算する Attention。クエリ・キー・バリューを使う。</p></li><li><a href="0134.html">変分オートエンコーダ（VAE）</a><p>潜在変数を確率分布として学ぶオートエンコーダ。新しいデータを生成できる。VQ-VAE・info VAE・β-VAE などの改良版がある。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>スキップ結合とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="スキップ結合（ディープラーニングの技術・層と構造）: 層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。">
+<meta name="description" content="スキップ結合（ディープラーニングの技術・層と構造）: 層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。【覚え方】層をいくつか飛ばした「近道」を作り、前の層の出力をそのまま後ろに足し…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0118.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="スキップ結合とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="スキップ結合（ディープラーニングの技術・層と構造）: 層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。">
+<meta property="og:description" content="スキップ結合（ディープラーニングの技術・層と構造）: 層を飛ばして、前の層の出力を後ろの層に足す結合。層を深くしても学習しやすくなる。ResNet で使われた。【覚え方】層をいくつか飛ばした「近道」を作り、前の層の出力をそのまま後ろに足し…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0118.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>層をいくつか飛ばした「近道」を作り、前の層の出力をそのまま後ろに足します。近道を通って勾配が後ろの層から前の層まで届きやすくなるので、層をとても深くしても学習できるようになりました。</p></section><section class="detail"><h2>試験での出され方</h2><p>ResNet で使われた仕組みとして問われます。層が深いと学習がうまくいかない問題を、どう解決したかが問われます。U-Net の、縮める側と広げる側をつなぐ結合もスキップ結合の一種です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0144.html">ResNet</a>との違い</dt><dd>ResNet は、スキップ結合を使って、100層を超えるとても深い CNN の学習を可能にしたモデル。</dd><dt><a href="0145.html">DenseNet</a>との違い</dt><dd>DenseNet は、各層に、それより前のすべての層の出力をつなぐ。ResNet のスキップ結合は、出力を足し合わせる。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="バッチ正規化" data-href="0116.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0117.html">レイヤー正規化</a><p>1つのデータの中で、層の値をまとめて整える正規化。Transformer で使われる。ほかにインスタンス正規化やグループ正規化がある。</p></li><li><a href="0119.html">リカレントニューラルネットワーク（RNN）</a><p>前の時点の情報を次に引き継ぐ回帰結合層を持つネットワーク。時系列データや文章を扱う。</p></li><li><a href="0116.html">バッチ正規化</a><p>ミニバッチごとに、各層の値を平均 0・分散 1 に整える方法。学習が安定して速くなる。</p></li><li><a href="0120.html">BPTT</a><p>RNN を時間の方向に展開して、誤差逆伝播法で学習する方法。</p></li><li><a href="0115.html">グローバルアベレージプーリング（GAP）</a><p>特徴マップ全体の平均を1つの値にするプーリング。全結合層の代わりに使い、パラメータを減らせる。</p></li><li><a href="0121.html">エルマンネットワークとジョルダンネットワーク</a><p>初期の RNN。エルマンネットワークは隠れ層の出力を、ジョルダンネットワークは出力層の出力を、次の時点の入力に戻す。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

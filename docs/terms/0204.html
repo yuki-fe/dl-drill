@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>拡散モデル（Diffusion Model）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル</title>
-<meta name="description" content="拡散モデル（Diffusion Model）（ディープラーニングの応用・データ生成）: データに少しずつノイズを加える過程と、ノイズを取り除いて戻す過程を学び、ノイズから画像などを生成するモデル。">
+<meta name="description" content="拡散モデル（Diffusion Model）（ディープラーニングの応用・データ生成）: データに少しずつノイズを加える過程と、ノイズを取り除いて戻す過程を学び、ノイズから画像などを生成するモデル。【覚え方】インクを水に垂らすと少しずつ広が…">
 <link rel="canonical" href="https://dl.yogo-drill.com/terms/0204.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="拡散モデル（Diffusion Model）とは？意味と覚え方｜G検定の用語｜ディープラーニング用語ドリル">
-<meta property="og:description" content="拡散モデル（Diffusion Model）（ディープラーニングの応用・データ生成）: データに少しずつノイズを加える過程と、ノイズを取り除いて戻す過程を学び、ノイズから画像などを生成するモデル。">
+<meta property="og:description" content="拡散モデル（Diffusion Model）（ディープラーニングの応用・データ生成）: データに少しずつノイズを加える過程と、ノイズを取り除いて戻す過程を学び、ノイズから画像などを生成するモデル。【覚え方】インクを水に垂らすと少しずつ広が…">
 <meta property="og:url" content="https://dl.yogo-drill.com/terms/0204.html">
 <meta property="og:site_name" content="ディープラーニング用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>インクを水に垂らすと少しずつ広がって（拡散して）元の形がわからなくなります。その逆再生を学ぶ、と考えます。画像にノイズを少しずつ加える過程を学んでおき、逆に、ノイズだけの状態から少しずつノイズを取り除いて画像を作ります。</p></section><section class="detail"><h2>試験での出され方</h2><p>ノイズを加える過程と取り除く過程の2つで学ぶ仕組みが問われます。文章から画像を作るモデル（Text-To-Image）でも使われています。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0200.html">GAN（敵対的生成ネットワーク）</a>との違い</dt><dd>GAN は、生成器と識別器を競わせて学ぶ。拡散モデルは、ノイズを少しずつ取り除く過程を学ぶ。</dd><dt><a href="0134.html">変分オートエンコーダ（VAE）</a>との違い</dt><dd>VAE は、潜在変数の確率分布からデコーダでデータを作る。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="NeRF" data-href="0205.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0203.html">CycleGAN</a><p>対になっていない画像の集まり（馬とシマウマなど）から、画像の変換を学ぶ GAN。</p></li><li><a href="0205.html">NeRF</a><p>いくつかの方向から撮った写真から、3次元の場面を学んで、別の方向から見た画像を作る方法。</p></li><li><a href="0202.html">Pix2Pix</a><p>対になった画像（線画と写真など）を使って、画像を別の画像に変換する GAN。</p></li><li><a href="0201.html">DCGAN</a><p>生成器と識別器に畳み込みニューラルネットワークを使った GAN。</p></li><li><a href="0200.html">GAN（敵対的生成ネットワーク）</a><p>データを作る生成器と、本物か偽物かを見分ける識別器を競わせて学ぶ生成モデル。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/gan-vae-diffusion.html">GANとVAEと拡散モデルの違い</a></li></ul></section>
     </aside>
   </div>
 </div>
