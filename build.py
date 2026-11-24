@@ -243,6 +243,7 @@ def build_home():
   </div>
   <aside class="hero-progress" aria-labelledby="prog-h">
     <h2 id="prog-h">あなたの進み具合</h2>
+    <div class="rev-plan" id="revPlan" hidden></div>
     <p class="hero-progress-sub">分野を押すと、その分野だけで学習します</p>
     <div class="fields" id="fields"></div>
     <p class="save-note">進み具合はこのブラウザに保存されます。<button id="reset" type="button">リセット</button></p>
@@ -262,7 +263,7 @@ def build_home():
 
 <section class="features" aria-labelledby="feat-h">
   <h2 id="feat-h" class="sec-title">できること</h2>
-  <div class="feat-grid"><a class="feat" href="#study">{icon("cards")}<b>単語帳とクイズ</b><span>{len(terms)}語をカード・4択・書いて答えるで。間違えた用語だけを復習できます。</span><em>学習を始める →</em></a><a class="feat" href="test.html">{icon("target")}<b>ミニテスト</b><span>6つの分野から{n_test}問。分野ごとの正答率がわかる。</span><em>挑戦する →</em></a><a class="feat" href="abbr.html">{icon("type")}<b>略語クイズ</b><span>GPU・LSTM・GAN…略語{len(ABBRS)}語のクイズと早見表。</span><em>覚える →</em></a><a class="feat" href="typing.html">{icon("keyboard")}<b>用語タイピング</b><span>用語と意味を打って、手で覚えます。制限時間は1分・2分・3分から。</span><em>タイピングする →</em></a><a class="feat" href="terms/index.html">{icon("list")}<b>用語一覧</b><span>分野・小分類ごとに全部の用語を一覧で。1語ずつ解説ページがあります。</span><em>一覧を見る →</em></a></div>
+  <div class="feat-grid"><a class="feat" href="#study">{icon("cards")}<b>単語帳とクイズ</b><span>{len(terms)}語をカード・4択・書いて答えるで。間違えた用語や忘れかけた用語を、日付で復習できます。</span><em>学習を始める →</em></a><a class="feat" href="test.html">{icon("target")}<b>ミニテスト</b><span>6つの分野から{n_test}問。分野ごとの正答率がわかる。</span><em>挑戦する →</em></a><a class="feat" href="abbr.html">{icon("type")}<b>略語クイズ</b><span>GPU・LSTM・GAN…略語{len(ABBRS)}語のクイズと早見表。</span><em>覚える →</em></a><a class="feat" href="typing.html">{icon("keyboard")}<b>用語タイピング</b><span>用語と意味を打って、手で覚えます。制限時間は1分・2分・3分から。</span><em>タイピングする →</em></a><a class="feat" href="terms/index.html">{icon("list")}<b>用語一覧</b><span>分野・小分類ごとに全部の用語を一覧で。1語ずつ解説ページがあります。</span><em>一覧を見る →</em></a></div>
 </section>
 
 <section class="prose home-intro">
@@ -491,7 +492,7 @@ def build_index():
   {''.join(sections)}
   {faq_html([
       ("用語はどの順番で覚えればいいですか？", "<p>ディープラーニングの応用（画像・言語・音声など）は、機械学習とディープラーニングの技術の用語が分かっていると理解しやすくなります。まず「人工知能とその動向」で全体の流れをつかみ、「機械学習」「ディープラーニングの技術」「ディープラーニングの応用」の順に進め、「社会実装と数理・統計」「法律・倫理」もあわせて覚えるのがおすすめです。ホームの「学習する」で分野を選ぶと、その分野だけで練習できます。</p>"),
-      ("意味を読んでもすぐ忘れてしまいます。", "<p>読むだけより、思い出す練習のほうが記憶に残ります。カードで用語を思い出し、4択や「書いて答える」で確かめ、間違えた用語は「復習」でくり返しましょう。<a href=\"../typing.html\">用語タイピング</a>で手を動かして覚える方法や、<a href=\"../abbr.html\">略語クイズ</a>で GPU・LSTM などの正式名を覚える方法もあります。</p>"),
+      ("意味を読んでもすぐ忘れてしまいます。", "<p>読むだけより、思い出す練習のほうが記憶に残ります。カードで用語を思い出し、4択や「書いて答える」で確かめ、間違えた用語は「今日の復習」でくり返しましょう。<a href=\"../typing.html\">用語タイピング</a>で手を動かして覚える方法や、<a href=\"../abbr.html\">略語クイズ</a>で GPU・LSTM などの正式名を覚える方法もあります。</p>"),
       ("似た用語の区別がつきません。", "<p>試験では、似た用語の違いがよく問われます。<a href=\"../compare/index.html\">似た用語の違い</a>で表にして比べると、見分けるポイントがつかめます。用語ページの「似た用語との違い」もあわせて読んでください。</p>"),
       ("数式が苦手でも大丈夫ですか？", "<p>このサイトでは、用語の意味を数式を使わずにやさしい言葉で説明しています。まずは「何のための方法か」「何と何が違うか」をつかみましょう。数理・統計の分野では、平均・分散・相関係数のような基本の考え方もあわせて確かめておくと安心です。</p>"),
       ("このサイトだけで合格できますか？", "<p>このサイトは用語の暗記が中心です。用語の意味を知っていても、場面に当てはめて考える問題もあるので、参考書や問題集もあわせて使うことをおすすめします。シラバスは改訂されることがあるので、受験の前に実施団体のサイトで最新のシラバスを確かめてください。</p>"),
@@ -516,7 +517,7 @@ def build_test():
     <ul>
       <li>1回{n}問（{mix}）。</li>
       <li>説明文を読んで、当てはまる用語をア〜エから選びます。答えはすべて解き終わってから表示します。</li>
-      <li>間違えた用語は、ホームの「復習」に入ります。</li>
+      <li>間違えた用語は、ホームの「今日の復習」に入ります。</li>
     </ul>
     <p>本番の試験は多肢選択式で、出題の数がとても多く、1問にかけられる時間は短めです。どの分野からも出るので、正答率の低い分野から重点的に復習しましょう。試験時間や問題数は、受験の前に実施団体のサイトで確認してください。</p>
     <p class="muted">このミニテストは用語の確認のためのもので、本番の問題の形や採点の方法とは異なります。</p>

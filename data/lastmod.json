@@ -1,6 +1,6 @@
 {
-"index.html": ["319bfd63dbdc", "2026-11-24"],
-"terms/index.html": ["e75bd5013dda", "2026-11-24"],
+"index.html": ["4c79036c5391", "2026-11-24"],
+"terms/index.html": ["6634b041a3cd", "2026-11-24"],
 "terms/0001.html": ["2431014efb23", "2026-11-24"],
 "terms/0002.html": ["7f1bdea7a675", "2026-11-24"],
 "terms/0003.html": ["36158bf83eee", "2026-11-24"],
@@ -310,7 +310,7 @@
 "compare/batch-layer-normalization.html": ["efc054c46b38", "2026-11-24"],
 "compare/cnn-rnn.html": ["5ec87f902ed8", "2026-11-24"],
 "compare/distillation-pruning-quantization.html": ["46554c16572c", "2026-11-24"],
-"test.html": ["0a3b63002456", "2026-11-24"],
+"test.html": ["4149c593f6aa", "2026-11-24"],
 "typing.html": ["9222d6e6e3a4", "2026-11-24"],
 "abbr.html": ["2343608ececc", "2026-11-24"],
 "about.html": ["a2ac83f26543", "2026-11-24"],
